@@ -5,9 +5,9 @@ const Popup = ({ isOpen, onClose, instructions, youtube }) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-50">
-      <div className="bg-white p-6 rounded-lg shadow-lg h-auto w-3/5">
+      <div className="bg-white p-6 rounded-lg shadow-lg md:h-auto md:w-3/5 sm:w-auto sm:h-auto ">
         <h4 className="text-xl font-semibold mb-4 text-center">Recipe Instructions</h4>
-        <p className="text-gray-700 mb-4">{instructions}</p>
+        <p className="text-gray-700 mb-4 sm:text-xs md:text-base">{instructions}</p>
         <div className='flex justify-center gap-3'>
           <button
             className="bg-orange-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-orange-600 transition duration-300"
@@ -19,7 +19,6 @@ const Popup = ({ isOpen, onClose, instructions, youtube }) => {
             <a
               href={youtube}
               target="_blank"
-        
               className="bg-orange-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-orange-600 transition duration-300 inline-flex items-center"
             >
               Watch Video

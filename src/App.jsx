@@ -16,7 +16,7 @@ function App() {
           name: meal.strMeal
         }));
           
-        setRecipeing((prevRecipeing) => [...mealsArray, ...prevRecipeing]);
+        setRecipeing(mealsArray);
       } else {
         const response_name = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${recipe}`);
         const data_name = await response_name.json();
