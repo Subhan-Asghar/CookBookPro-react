@@ -45,7 +45,7 @@ function App() {
   return (
     <>
       <div className="flex flex-row justify-center bg-orange-600 p-6 shadow-lg">
-        <h3 className="text-4xl text-white font-bold">Recipe App</h3>
+        <h3 className="text-4xl text-white font-bold">Cookbook Pro</h3>
       </div>
       <div className="flex flex-row justify-center items-center h-16 bg-orange-500 p-4 shadow-md">
         <input
